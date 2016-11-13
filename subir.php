@@ -3,8 +3,8 @@
 	
    //$conexion=ConectarBaseDatos();
 
-mysql_connect("52.38.138.57:3306","remote","1234") or die(mysql_error()) ;
-mysql_select_db("bd_banners") or die(mysql_error()) ;
+	$conexion=mysqli_connect("52.38.138.57:3306","remote","1234","bd_banners","3306")
+	or die("Problemas con la conexión");
 
 $imagen1= $_FILES["imagen"]["name"];
 $ruta=$_FILES["imagen"]["tmp_name"];
