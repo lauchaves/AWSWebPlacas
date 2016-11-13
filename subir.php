@@ -9,7 +9,7 @@
 $imagen1= $_FILES["imagen"]["name"];
 $ruta=$_FILES["imagen"]["tmp_name"];
 //$destino="/home/laurens/repoLaurens/ProyectoInteligenciaArtificial/EntregaI/imagenes/".$imagen1;
-echo $imagen1;
+var_dump $imagen1;
 $destino2 ="/var/www/html/AWSWebPlacas/imagenes/".$imagen1;
  $fp     = fopen($ruta, 'r+b');
 $data = fread($fp, filesize($ruta));
