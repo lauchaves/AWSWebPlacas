@@ -16,8 +16,8 @@ $data = fread($fp, filesize($ruta));
 fclose($fp);
 
                 //escapar los caracteres
-                $data = mysql_escape_string($data);
-c//opy($ruta, $destino);
+                //$data = mysql_escape_string($data);
+//copy($ruta, $destino);
 copy($ruta, $destino2);
 mysql_query("INSERT INTO imagenes (tipo_imagen, nombreimagen) VALUES ( '$destino2','$imagen1')") ;
 header("location: dashboard.php");
