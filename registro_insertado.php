@@ -6,7 +6,7 @@
     mysqli_query($conexion,"insert into usuario 
     	(usuario,contrasena,email,activo) values 
     	('$_REQUEST[usuario]','$_REQUEST[contrasena]'
-    		,'$_REQUEST[email]',1)")
+    		,'$_REQUEST[email]',9)")
 
     or die("Problemas en el insert".mysqli_error($conexion));
 
