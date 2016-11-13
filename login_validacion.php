@@ -23,7 +23,7 @@
       mysqli_close($conexion);
       $_SESSION["error"]=null;
       $_SESSION['usuario'] =null;
-      
+      echo "imhere";
 
          $_SESSION['usuario'] = $usuario;         
          header("location: dashboard.php");
