@@ -1,6 +1,11 @@
 <?php
-mysql_connect("52.38.138.57:3306","remote","1234") or die(mysql_error()) ;
-mysql_select_db("bd_banners") or die(mysql_error()) ;
+   require_once("database.php");
+	
+   $conexion=ConectarBaseDatos();
+
+//mysql_connect("52.38.138.57:3306","remote","1234") or die(mysql_error()) ;
+//mysql_select_db("bd_banners") or die(mysql_error()) ;
+
 $imagen1= $_FILES["imagen"]["name"];
 $ruta=$_FILES["imagen"]["tmp_name"];
 //$destino="/home/laurens/repoLaurens/ProyectoInteligenciaArtificial/EntregaI/imagenes/".$imagen1;
