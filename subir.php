@@ -1,5 +1,5 @@
 <?php
-mysql_connect("ec2-52-38-138-57.us-west-2.compute.amazonaws.com","root","root") or die(mysql_error()) ;
+mysql_connect("ec2-52-38-138-57.us-west-2.compute.amazonaws.com","root","root","bd_banners","3306") or die(mysql_error()) ;
 mysql_select_db("bd_banners") or die(mysql_error()) ;
 $imagen1= $_FILES["imagen"]["name"];
 $ruta=$_FILES["imagen"]["tmp_name"];
