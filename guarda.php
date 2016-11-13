@@ -2,7 +2,7 @@
 
 
 //conexion a la base de datos
-mysql_connect("localhost", "root", "") or die(mysql_error()) ;
+mysql_connect(		$conexion=mysqli_connect("ec2-52-38-138-57.us-west-2.compute.amazonaws.com","root","root") or die(mysql_error()) ;
 mysql_select_db("bd_banners") or die(mysql_error()) ;
 
 //comprobamos si ha ocurrido un error.
@@ -30,7 +30,7 @@ fclose($fp);
                 $destino="imagenes/".$imagen_temporal;
                 
 
-		$resultado = @mysql_query("INSERT INTO imagenes (imagen, tipo_imagen) VALUES ('$data', '$tipo')") ;
+		$resultado = @mysql_query("INSERT INTO imagenes ( tipo_imagen) VALUES ( '$tipo')") ;
 		copy($tipo, $destino);
 		if ($resultado){
 			echo "el archivo ha sido copiado exitosamente";

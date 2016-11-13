@@ -1,5 +1,5 @@
 <?php
-mysql_connect("localhost", "root", "") or die(mysql_error()) ;
+mysql_connect("ec2-52-38-138-57.us-west-2.compute.amazonaws.com","root","root") or die(mysql_error()) ;
 mysql_select_db("bd_banners") or die(mysql_error()) ;
 
 $result = mysql_query("SELECT * FROM imgplaca");
