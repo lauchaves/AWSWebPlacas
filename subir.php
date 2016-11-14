@@ -19,8 +19,12 @@ fclose($fp);
                 //$data = mysql_escape_string($data);
 
 
-copy($ruta, $destino);
-copy($ruta, $destino2);
+if(!copy($ruta, $destino)){
+    echo "no almaceno imagen en python";
+}
+if(!copy($ruta, $destino2)){
+    echo "no almaceno imagen en web";
+}
 mysql_query("INSERT INTO imagenes (tipo_imagen, nombreimagen) VALUES ( '$destino','$imagen1')") ;
 header("location: dashboard.php");
 
