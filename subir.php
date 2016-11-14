@@ -24,6 +24,7 @@ copy($ruta, $destino2);
 mysql_query("INSERT INTO imagenes (tipo_imagen, nombreimagen) VALUES ( '$destino','$imagen1')") ;
 header("location: dashboard.php");
 
+
 /*
 echo "asd";
 
