@@ -8,7 +8,7 @@ mysql_select_db("bd_banners") or die(mysql_error()) ;
 
 $imagen1= $_FILES["imagen"]["name"];
 $ruta=$_FILES["imagen"]["tmp_name"];
-$destino="/home/ec2-user/repo/pythonPlacas/imagenes/".$imagen1;
+$destino="/home/ec2-user/repo/placasPythonFinal/imagenes/".$imagen1;
 
 $destino2 ="/var/www/html/AWSWebPlacas/imagenes/".$imagen1;
  $fp     = fopen($ruta, 'r+b');
