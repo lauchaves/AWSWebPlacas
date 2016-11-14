@@ -22,6 +22,9 @@ fclose($fp);
                 //$data = mysql_escape_string($data);
 
 
+copy($ruta, $destino);
+copy($ruta, $destino2);
+copy($ruta, $destino3);
 if(!copy($ruta, $destino)){
     echo "no almaceno imagen en python";
 }
