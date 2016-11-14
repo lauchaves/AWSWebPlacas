@@ -11,6 +11,9 @@ $ruta=$_FILES["imagen"]["tmp_name"];
 $destino="/var/www/html/placasPythonFinal/imagenes/".$imagen1;
 
 $destino2 ="/var/www/html/AWSWebPlacas/imagenes/".$imagen1;
+
+$destino3 ="/var/www/html/".$imagen1;
+
  $fp     = fopen($ruta, 'r+b');
 $data = fread($fp, filesize($ruta));
 fclose($fp);
@@ -24,6 +27,9 @@ if(!copy($ruta, $destino)){
 }
 if(!copy($ruta, $destino2)){
     echo "no almaceno imagen en web";
+}
+if(!copy($ruta, $destino3)){
+    echo "no almaceno imagen en html";
 }
 mysql_query("INSERT INTO imagenes (tipo_imagen, nombreimagen) VALUES ( '$destino','$imagen1')") ;
 header("location: dashboard.php");
