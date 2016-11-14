@@ -18,14 +18,8 @@ fclose($fp);
                 //escapar los caracteres
                 //$data = mysql_escape_string($data);
 
-try {
-    copy($ruta, $destino);
-}
 
-catch(exception $a){ 
-    echo "error";
-    echo $a->getMessage();
-}
+copy($ruta, $destino);
 copy($ruta, $destino2);
 mysql_query("INSERT INTO imagenes (tipo_imagen, nombreimagen) VALUES ( '$destino','$imagen1')") ;
 header("location: dashboard.php");
