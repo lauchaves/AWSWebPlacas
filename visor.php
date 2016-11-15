@@ -14,7 +14,7 @@ while($row=mysql_fetch_array($result))
 echo "<tr><td align=\"center\">".$row["nombreimg"]."</td>
 <td align=\"center\">".$row["placa"]."</td>
 <td align=\"center\"><img
-src=./imagenes/".$row['nombreimg']." height=\"250\"
+src=AWSWebPlacas/imagenes/".$row['nombreimg']." height=\"250\"
 width=\"300\"/></td></tr>";
 }
 echo "</table>";
