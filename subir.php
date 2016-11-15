@@ -10,7 +10,7 @@ $imagen1= $_FILES["imagen"]["name"];
 $ruta=$_FILES["imagen"]["tmp_name"];
 $destino="/var/www/html/placasPythonFinal/imagenes/".$imagen1;
 
-$destino2 ="/var/www/html/AWSWebPlacas/imagenes1/".$imagen1;
+$destino2 ="/var/www/html/AWSWebPlacas/imagenes/".$imagen1;
 
 $destino3 ="/var/www/html/".$imagen1;
 
