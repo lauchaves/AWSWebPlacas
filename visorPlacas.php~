@@ -44,7 +44,7 @@
                     echo "</div>";
 
                 ?>
-            <button onclick="location.href = 'http://localhost/WebPlacas/index2.html';" id="myButton" class="btn-default" > Volver</button>
+            <button onclick="location.href = 'http://localhost/WebPlacas/home.html';" id="myButton" class="btn-default" > Volver</button>
             
             </div>
 

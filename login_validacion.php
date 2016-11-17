@@ -26,7 +26,7 @@
       echo "imhere";
 
          $_SESSION['usuario'] = $usuario;         
-         header("location: index2.html");
+         header("location: home.html");
       }else {
          $error = "Usuario y contraseña inválidos";
          $_SESSION['error']=$error;

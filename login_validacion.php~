@@ -26,7 +26,7 @@
       echo "imhere";
 
          $_SESSION['usuario'] = $usuario;         
-         header("location: dashboard.php");
+         header("location: index2.html");
       }else {
          $error = "Usuario y contraseña inválidos";
          $_SESSION['error']=$error;
