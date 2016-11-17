@@ -35,7 +35,7 @@ if(!copy($ruta, $destino3)){
     echo "no almaceno imagen en html";
 }
 mysql_query("INSERT INTO imagenes (tipo_imagen, nombreimagen) VALUES ( '$destino','$imagen1')") ;
-header("location: index2.html");
+header("location: dashboard.php");
 
 
 /*
